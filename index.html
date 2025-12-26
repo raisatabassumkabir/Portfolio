@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Creative Developer</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Port<span>folio.</span></div>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact" class="contact-btn-nav">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <!-- Decorative Background Code -->
+        <div class="code-bg">
+            <p>class Developer {</p>
+            <p>&nbsp;&nbsp;constructor() {</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;this.name = "Raisa Tabassum Kabir";</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;this.role = "Full Stack Dev";</p>
+            <p>&nbsp;&nbsp;}</p>
+            <p>}</p>
+        </div>
+
+        <div class="container">
+            <div class="hero-content fade-in">
+                <div class="hero-text">
+                    <p class="hero-greeting">Hi, I'm</p>
+                    <h1 class="hero-name">Raisa Tabassum Kabir</h1>
+                    <p class="hero-bio">
+                        A freelance <span class="highlight">&lt;Full custom Developer/&gt;</span> with 10 years
+                        commercial experience creating successful websites.
+                    </p>
+                    <div class="hero-btns">
+                        <a href="#contact" class="btn btn-primary">Hire me!</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="img-wrapper">
+                        <!-- Using a placeholder initially, intended to be replaced or used if valid -->
+                        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Felix" alt="Profile Picture">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- features Block -->
+    <div class="container">
+        <div class="features">
+            <div class="features-grid fade-in">
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fas fa-tachometer-alt"></i></div>
+                    <h3 class="feature-title">Fast</h3>
+                    <p class="feature-desc">Fast load times and lag free interaction, my highest priority.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h3 class="feature-title">Responsive</h3>
+                    <p class="feature-desc">My layouts will work on any device, big or small.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="far fa-lightbulb"></i></div>
+                    <h3 class="feature-title">Intuitive</h3>
+                    <p class="feature-desc">Strong preference for easy to use, intuitive UX/UI.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fas fa-rocket"></i></div>
+                    <h3 class="feature-title">Dynamic</h3>
+                    <p class="feature-desc">Websites don't have to be static, I love making pages come to life.</p>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 50px;" class="fade-in">
+                <a href="#" class="btn btn-solid">Download my resume (PDF)</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="section-title fade-in">About</h2>
+            <div style="max-width: 800px; margin: 0 auto; text-align: center;" class="fade-in">
+                <p style="font-size: 1.1rem; color: var(--text-secondary); margin-bottom: 20px;">
+                    I'm a Passionate Full Stack Developer based in [Your Location]. I enjoy creating things that live on
+                    the internet, whether that be websites, applications, or anything in between. My goal is to always
+                    build products that provide pixel-perfect, performant experiences.
+                </p>
+                <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                    <span
+                        style="background: rgba(255,255,255,0.05); padding: 8px 15px; border-radius: 20px;">HTML/CSS</span>
+                    <span
+                        style="background: rgba(255,255,255,0.05); padding: 8px 15px; border-radius: 20px;">JavaScript</span>
+                    <span
+                        style="background: rgba(255,255,255,0.05); padding: 8px 15px; border-radius: 20px;">React</span>
+                    <span
+                        style="background: rgba(255,255,255,0.05); padding: 8px 15px; border-radius: 20px;">Node.js</span>
+                    <span
+                        style="background: rgba(255,255,255,0.05); padding: 8px 15px; border-radius: 20px;">Python</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section" id="services" style="background-color: #0b0e13;">
+        <div class="container">
+            <h2 class="section-title fade-in">What I Build</h2>
+            <div class="services-grid fade-in">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-network-wired"></i></div>
+                    <h3>RESTful APIs</h3>
+                    <p>Developing scalable APIs using Spring Boot.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-lock"></i></div>
+                    <h3>Secure Web Apps</h3>
+                    <p>Building secure applications with Spring Security.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-globe"></i></div>
+                    <h3>Dynamic Websites</h3>
+                    <p>Integrating Thymeleaf and HTML for dynamic content.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-database"></i></div>
+                    <h3>DB Applications</h3>
+                    <p>Database-backed applications using MySQL & MongoDB.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="section" id="portfolio">
+        <div class="container">
+            <h2 class="section-title fade-in">Featured Projects</h2>
+            <div class="portfolio-grid fade-in">
+                <div class="portfolio-item">
+                    <img src="https://images.unsplash.com/photo-1524985069026-dd778a71c7b4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80"
+                        alt="Library Management">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-info">
+                            <h3>Library Management System</h3>
+                            <p>Spring Boot, MySQL, Spring Security</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                        alt="Portfolio Website">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-info">
+                            <h3>Portfolio Website</h3>
+                            <p>HTML, CSS & Spring Boot Backend</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://images.unsplash.com/photo-1516110833967-0b5716ca1387?ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80"
+                        alt="Dating Application">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-info">
+                            <h3>Dating Application</h3>
+                            <p>MongoDB, Spring Boot, Thymeleaf</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+        <div class="container">
+            <h2 class="section-title fade-in">Contact Me</h2>
+            <div class="contact-container fade-in">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p>I'm available to work on your projects and bring your ideas to life. I am just a click away.</p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <h4>Location</h4>
+                                <p>New York, USA</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>hello@example.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" class="form-control" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-solid" style="width: 100%;">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Raisa Tabassum Kabir. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
