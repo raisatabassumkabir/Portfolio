@@ -235,6 +235,25 @@ nav {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
+    white-space: nowrap;
+}
+
+@media (max-width: 1200px) {
+    .hero-name {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-name {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-name {
+        font-size: 1.6rem;
+    }
 }
 
 .hero-name span {
