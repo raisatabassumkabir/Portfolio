@@ -22,7 +22,7 @@
                     <i class="fas fa-bars"></i>
                 </div>
                 <ul class="nav-links">
-                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#home">Home</a></li>
                     <li><a href="#about">About Me</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
@@ -85,7 +85,8 @@
             </div>
 
             <div style="text-align: center; margin-top: 50px;" class="fade-in">
-                <a href="#" class="btn btn-solid">Download my resume (PDF)</a>
+                <a href="https://docs.google.com/document/d/1mw52lN3CKXR2QubC8r0FCmNBOBxGzJxjjeZ1g2xXAMA//export?format=pdf"
+                    class="btn btn-solid">Download my resume (PDF)</a>
             </div>
         </div>
     </div>
@@ -149,12 +150,11 @@
 
     <!-- Portfolio Section -->
     <section class="section" id="portfolio">
-        <div class="container">
+        <div class="container-wide">
             <h2 class="section-title fade-in">Featured Projects</h2>
             <div class="portfolio-grid fade-in">
                 <div class="portfolio-item">
-                    <img src="https://images.unsplash.com/photo-1524985069026-dd778a71c7b4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80"
-                        alt="Library Management">
+                    <img src="C:/Users/User/Pictures/Screenshots/library.png" alt="Library Management">
                     <div class="portfolio-overlay">
                         <div class="portfolio-info">
                             <h3>Library Management System</h3>
@@ -163,22 +163,29 @@
                     </div>
                 </div>
                 <div class="portfolio-item">
-                    <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-                        alt="Portfolio Website">
+                    <img src="C:/Users/User/Pictures/Screenshots/portfolio.png" alt="Portfolio Website">
                     <div class="portfolio-overlay">
                         <div class="portfolio-info">
                             <h3>Portfolio Website</h3>
-                            <p>HTML, CSS & Spring Boot Backend</p>
+                            <p>HTML, CSS & Spring Boot Backend.University project</p>
                         </div>
                     </div>
                 </div>
                 <div class="portfolio-item">
-                    <img src="https://images.unsplash.com/photo-1516110833967-0b5716ca1387?ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80"
-                        alt="Dating Application">
+                    <img src="C:/Users/User/Pictures/Screenshots/biye.png" alt="Dating Application">
                     <div class="portfolio-overlay">
                         <div class="portfolio-info">
                             <h3>Dating Application</h3>
                             <p>MongoDB, Spring Boot, Thymeleaf</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="C:/Users/User/Pictures/Screenshots/office.png" alt="Office Management System">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-info">
+                            <h3>Office Management System</h3>
+                            <p>HTML, CSS & Spring Boot Backend</p>
                         </div>
                     </div>
                 </div>
@@ -207,22 +214,25 @@
                             <div class="contact-icon"><i class="fas fa-envelope"></i></div>
                             <div>
                                 <h4>Email</h4>
-                                <p>kabirraisatabassum@gmail.com</p>
+                                <p>2022100000032@seu.edu.bd</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="contact-form-wrapper">
-                    <form id="contactForm">
+                    <form id="contactForm" action="https://formspree.io/f/YOUR_FORMSPREE_ID_HERE" method="POST">
                         <div class="form-group">
-                            <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+                            <input type="text" id="name" name="name" class="form-control" placeholder="Your Name"
+                                required>
                         </div>
                         <div class="form-group">
-                            <input type="email" id="email" class="form-control" placeholder="Your Email" required>
+                            <input type="email" id="email" name="email" class="form-control" placeholder="Your Email"
+                                required>
                         </div>
                         <div class="form-group">
-                            <textarea id="message" class="form-control" placeholder="Your Message" required></textarea>
+                            <textarea id="message" name="message" class="form-control" placeholder="Your Message"
+                                required></textarea>
                         </div>
                         <button type="submit" class="btn btn-solid" style="width: 100%;">Submit</button>
                     </form>
