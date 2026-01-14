@@ -21,16 +21,11 @@ document.querySelectorAll('.nav-links a').forEach(link => {
 });
 
 // Contact Form Handler
-const contactForm = document.getElementById('contactForm');
+const contactForm = document.getElementById("contactForm");
 
 if (contactForm) {
-    contactForm.addEventListener('submit', function (e) {
+    contactForm.addEventListener("submit", function (e) {
         e.preventDefault();
-
-        // Change button text to indicate loading
-        const submitBtn = contactForm.querySelector('button[type="submit"]');
-        const originalBtnText = submitBtn.innerText;
-        submitBtn.innerText = 'Sending...';
 
         emailjs
             .sendForm(
@@ -40,14 +35,12 @@ if (contactForm) {
             )
             .then(
                 function () {
-                    alert("Message sent successfully! I will contact you soon 😊");
+                    alert("Message sent successfully! 😊");
                     contactForm.reset();
-                    submitBtn.innerText = originalBtnText;
                 },
                 function (error) {
-                    alert("Failed to send message. Please try again.");
-                    console.error(error);
-                    submitBtn.innerText = originalBtnText;
+                    alert("Failed to send message ❌");
+                    console.error("EmailJS Error:", error);
                 }
             );
     });
