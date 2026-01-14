@@ -24,30 +24,32 @@ document.querySelectorAll('.nav-links a').forEach(link => {
 const contactForm = document.getElementById('contactForm');
 
 if (contactForm) {
-    contactForm.addEventListener('submit', async (e) => {
+    contactForm.addEventListener('submit', function (e) {
         e.preventDefault();
 
-        const form = e.target;
-        const data = new FormData(form);
+        // Change button text to indicate loading
+        const submitBtn = contactForm.querySelector('button[type="submit"]');
+        const originalBtnText = submitBtn.innerText;
+        submitBtn.innerText = 'Sending...';
 
-        try {
-            const response = await fetch(form.action, {
-                method: form.method,
-                body: data,
-                headers: {
-                    'Accept': 'application/json'
+        emailjs
+            .sendForm(
+                "service_c9n66u",
+                "template_plzs0tf",
+                this
+            )
+            .then(
+                function () {
+                    alert("Message sent successfully! I will contact you soon 😊");
+                    contactForm.reset();
+                    submitBtn.innerText = originalBtnText;
+                },
+                function (error) {
+                    alert("Failed to send message. Please try again.");
+                    console.error(error);
+                    submitBtn.innerText = originalBtnText;
                 }
-            });
-
-            if (response.ok) {
-                alert("Thanks for your message! I'll get back to you soon.");
-                form.reset();
-            } else {
-                alert("Oops! There was a problem submitting your form. Please try again.");
-            }
-        } catch (error) {
-            alert("Oops! There was a problem submitting your form. Please try again or email me directly.");
-        }
+            );
     });
 }
 

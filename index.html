@@ -50,8 +50,7 @@
                 </div>
                 <div class="hero-image">
                     <div class="img-wrapper">
-                        <!-- Using a placeholder initially, intended to be replaced or used if valid -->
-                        <img src="images/linkdin.jpg" alt="Profile Picture">
+                        <img src="./images/linkdin.jpg" alt="Profile Picture">
                     </div>
                 </div>
             </div>
@@ -154,7 +153,7 @@
             <h2 class="section-title fade-in">Featured Projects</h2>
             <div class="portfolio-grid fade-in">
                 <div class="portfolio-item">
-                    <img src="images/library.png" alt="Library Management">
+                    <img src="./images/library.png" alt="Library Management">
                     <div class="portfolio-overlay">
                         <div class="portfolio-info">
                             <h3>Library Management System</h3>
@@ -163,7 +162,7 @@
                     </div>
                 </div>
                 <div class="portfolio-item">
-                    <img src="images/portfolio.png" alt="Portfolio Website">
+                    <img src="./images/portfolio.png" alt="Portfolio Website">
                     <div class="portfolio-overlay">
                         <div class="portfolio-info">
                             <h3>Portfolio Website</h3>
@@ -172,7 +171,7 @@
                     </div>
                 </div>
                 <div class="portfolio-item">
-                    <img src="images/biye.png" alt="Dating Application">
+                    <img src="./images/biye.png" alt="Dating Application">
                     <div class="portfolio-overlay">
                         <div class="portfolio-info">
                             <h3>Dating Application</h3>
@@ -181,7 +180,7 @@
                     </div>
                 </div>
                 <div class="portfolio-item">
-                    <img src="images/office.png" alt="Office Management System">
+                    <img src="./images/office.png" alt="Office Management System">
                     <div class="portfolio-overlay">
                         <div class="portfolio-info">
                             <h3>Office Management System</h3>
@@ -221,7 +220,7 @@
                 </div>
 
                 <div class="contact-form-wrapper">
-                    <form id="contactForm" action="https://formspree.io/f/YOUR_FORMSPREE_ID_HERE" method="POST">
+                    <form id="contactForm">
                         <div class="form-group">
                             <input type="text" id="name" name="name" class="form-control" placeholder="Your Name"
                                 required>
@@ -248,6 +247,13 @@
         </div>
     </footer>
 
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init("5q6TFMJMnewh4KLKK");
+        })();
+    </script>
     <!-- Scripts -->
     <script src="script.js"></script>
 </body>
