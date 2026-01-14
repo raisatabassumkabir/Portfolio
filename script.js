@@ -29,7 +29,7 @@ if (contactForm) {
 
         emailjs
             .sendForm(
-                "service_c9n66u",
+                "service_c9n66ui",
                 "template_plzs0tf",
                 this
             )
